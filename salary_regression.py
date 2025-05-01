@@ -7,19 +7,20 @@ import numpy as np
 
 # Load the trained model
 ##model = tf.keras.models.load_model('model.h5')
-model = tf.keras.models.load_model('/Users/admin/Documents/Deep_learn/ven_deep/regression_model.h5')
-##/Users/admin/Documents/Deep_learn
+##model = tf.keras.models.load_model('/Users/admin/Documents/Deep_learn/ven_deep/regression_model.h5')
+model = tf.keras.models.load_model('regression_model.h5')
+
 import os
 print("Current working directory:", os.getcwd())
 
 # Load the encoder and scaler
-with open('/Users/admin/Documents/Deep_learn/ven_deep/onehot_enco_geo.pkl', 'rb') as file:
+with open('onehot_enco_geo.pkl', 'rb') as file:
     onehot_enco_geo = pickle.load(file)
 
-with open('/Users/admin/Documents/Deep_learn/ven_deep/label_encod_gender.pkl', 'rb') as file:
+with open('label_encod_gender.pkl', 'rb') as file:
     label_encod_gender = pickle.load(file)
 
-with open('/Users/admin/Documents/Deep_learn/ven_deep/scaler1.pkl', 'rb') as file:
+with open('scaler1.pkl', 'rb') as file:
     scaler1 = pickle.load(file)
 
 
